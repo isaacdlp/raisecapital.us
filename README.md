@@ -1,2 +1,4 @@
-# risecapital.us
-Rise Capital Website
+# raisecapital.us
+
+Raise Capital Website
+
