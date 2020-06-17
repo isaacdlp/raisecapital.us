@@ -412,6 +412,18 @@
 	.client-row {
 		padding-left: 0;
 	}
+	.about-contentbox ul {
+		list-style-type: none;
+		padding-left: 0px;
+	}
+
+	.about-contentbox ul li {
+		margin-top: 20px;
+	}
+
+	.testimonial-content {
+		padding: 0px !important;
+	}
 }
 @media only screen and (max-width: 460px) {
 	h4 {
