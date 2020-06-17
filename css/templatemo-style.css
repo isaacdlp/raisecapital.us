@@ -902,3 +902,6 @@ a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:
   padding: 15px;
   border-radius: 10px;
 }
+.about-contentbox ul {
+  padding-left: 20px;
+}
