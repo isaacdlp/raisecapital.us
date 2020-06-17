@@ -21,12 +21,20 @@ $(function() {
 			data: formData
 		})
 		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('bg-danger');
-			$(formMessages).addClass('bg-success');
-
-			// Set the message text.
-			$(formMessages).text('Your message successfully sent');
+			console.log(response)
+			if (response.status == "success") {
+				// Make sure that the formMessages div has the 'success' class.
+				$(formMessages).removeClass('bg-danger');
+				$(formMessages).addClass('bg-success');
+				// Set the message text.
+				$(formMessages).text('Message sent. We will be in touch shortly');
+			} else {
+				// Make sure that the formMessages div has the 'success' class.
+				$(formMessages).removeClass('bg-success');
+				$(formMessages).addClass('bg-danger');
+				// Set the message text.
+				$(formMessages).text('Message not sent. Please try again');
+			}
 
 			// Clear the form.
 			$('#name, #email, #message').val('');			
