@@ -163,7 +163,14 @@
                 scrollOverflow: true,
                 responsiveWidth: 768,
                 responsiveHeight: 600,
-                responsiveSlides: true
+                responsiveSlides: true,
+                onLeave: function(origin, destination, direction){
+                    if(destination.index == 0) {
+                        $("#myVideo").css("filter", "brightness(80%)")
+                    } else {
+                        $("#myVideo").css("filter", "brightness(40%)")
+                    }
+                }
             });
         }
         $(document).on('click', '.navbar-toggle', function() {

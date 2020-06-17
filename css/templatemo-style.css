@@ -306,11 +306,21 @@ video {
 .container-fluid {
   padding:0 20px;
 }
+a {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 a#logo {
+  position: relative;
+  top: -5px;
   text-decoration: none;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: normal;
+}
+a#logo:hover {
+  opacity: 75%;
 }
 .navbar {
   padding: 0;
@@ -463,7 +473,7 @@ a#logo {
   box-shadow: 0 0 40px rgba(0,0,0,.3);
 }
 .about-contentbox {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align:left;
   line-height:1.8;
 }
@@ -546,6 +556,12 @@ a#logo {
   background-color: #fff;
   color: #1e1e1e;
 }
+.service-box div {
+  padding: 15px;
+}
+.service-box div img {
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
 .service-box h3 {
   font-size:22px;
   font-weight:700;
@@ -604,9 +620,10 @@ a#logo {
   bottom: 0;
   text-align: left;
   padding: 20px;
-  background-color: rgba(250,250,250,0.25);
+  background-color: rgba(0,116,185,0.8);
   width: 100%;
   height: 60px;
+  border-radius: 10px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   -webkit-transition: all 0.4s ease;
@@ -759,6 +776,7 @@ textarea.form-control {
   border-radius: 10px;
   padding: 30px;
   font-weight: 700;
+  min-height: 90px;
 }
 .contact-row i {
   width:55px;
@@ -783,7 +801,7 @@ textarea.form-control {
   margin: 0 auto;
 }
 .testimonials-section .item h4 {
-  margin-top: 40px;
+  margin-top: 0px;
   font-size: 22px;
   text-transform: capitalize;
   font-weight: 700;
@@ -853,4 +871,28 @@ textarea.form-control {
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
+}
+
+/* Additions */
+
+#myVideo {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  filter: brightness(80%);
+}
+
+span.test-a {
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  left: 50px;
+  margin-bottom: -50px;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(40, 103, 178, 0.9);
+  padding: 8px;
+}
+
+.client-row img:hover {
+  opacity: 0.8;
 }
