@@ -892,6 +892,12 @@ span.test-a {
 .client-row img:hover {
   opacity: 0.8;
 }
+.bg-warn {
+  background-color: #f3c56b !important
+}
+a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:hover {
+  background-color: #e7bb66 !important
+}
 #form-messages {
   padding: 15px;
   border-radius: 10px;
