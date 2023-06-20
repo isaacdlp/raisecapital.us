@@ -467,9 +467,7 @@ a#logo:hover {
   position:relative;
 }
 .about-img img {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
-  box-shadow: 0 0 40px rgba(0,0,0,.3);
+  border-radius: 25px !important;
 }
 .about-contentbox {
   margin-top: 50px;
