@@ -10,7 +10,7 @@ function form_msg(status, message) {
 
 $(function() {
 
-    // Get the form.
+    // Get the form!
     var form = $('#ajax-contact');
 
     // Set up an event listener for the contact form.
