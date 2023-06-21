@@ -907,3 +907,7 @@ a.bg-warn:focus, a.bg-success:hover, button.bg-success:focus, button.bg-success:
   padding-top: 50px;
   color: black;
 }
+
+.justify-content-center > div {
+  max-width: 1000px !important;
+}
