@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="css/responsive.css">
 
   </head>
-  <body>
+  <body class="eupopup eupopup-bottomleft eupopup-color-inverse">
     <div id="video">
         <div class="preloader">
             <div class="preloader-bounce">
@@ -400,7 +400,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="animate" data-animate="fadeInUp" style="padding-top: 40px;">© Copyright 2023 &bull; Raise Capital &bull; All rights reserved</div>
+                            <div class="animate" data-animate="fadeInUp" style="padding-top: 40px;">
+                                <p><b>
+                                    <a href="legal/privacy_policy.html">Privacy Policy</a> &bull;
+                                    <a href="legal/terms_service.html">Terms of Service</a> &bull;
+                                    <a href="legal/cookie_policy.html">Cookie Policy</a>
+                                </b></p>
+                                <p>© Copyright 2023 &bull; Raise Capital &bull; All rights reserved</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -443,6 +450,22 @@
         gtag('js', new Date());
 
         gtag('config', 'G-5ZVM44FCLV');
+    </script>
+
+    <!-- Cookies banner -->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-eu-cookie-law-popup.css"/>
+    <script src="js/jquery-eu-cookie-law-popup.js"></script>
+    <script>
+        $(document).ready( function() {
+            if ($(".eupopup").length > 0) {
+                $(document).euCookieLawPopup().init({
+                    'buttonContinueTitle' : 'Ok, I agree',
+                    'buttonLearnmoreTitle' : 'Cookie Policy',
+                    'cookiePolicyUrl' : 'legal/cookie_policy.html'
+                });
+            }
+        });
     </script>
 
   </body>
