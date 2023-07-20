@@ -12258,7 +12258,7 @@ img.rounded-circle {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: url("//raisecapital.us/app/logo.png") center;
+  background: url("./logo.png") center;
 }
 
 .rc-mainline::before {
