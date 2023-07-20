@@ -12225,11 +12225,3 @@ img.rounded-circle {
   height: 100px;
   background: url("./logo.png") center;
 }
-
-.rc-mainline::before {
-  content: "Welcome to Raise Capital"
-}
-
-.rc-tagline::before {
-  content: "A platform for the venture capital and private equity industries"
-}
