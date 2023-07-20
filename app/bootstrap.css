@@ -12253,3 +12253,18 @@ img.rounded-circle {
     max-width: 150px;
     width: 100%;
 }
+
+.rc-logo {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url("//raisecapital.us/app/logo.png") center;
+}
+
+.rc-mainline::before {
+  content: "Welcome to Raise Capital"
+}
+
+.rc-tagline::before {
+  content: "A platform for the venture capital and private equity industries"
+}
